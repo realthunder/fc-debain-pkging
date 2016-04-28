@@ -1,4 +1,4 @@
-freecad (1:0.16.6703-1ppa1~xenial1) xenial; urgency=low
+freecad (1:0.16.6703-1ppa1) xenial; urgency=low
 
   * Some upstream fixes.
   * debian/rules: add xenial filter to bug fix, makes file usable
