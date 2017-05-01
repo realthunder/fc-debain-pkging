@@ -1,8 +1,8 @@
-freecad (1:0.16.6707-1ppa1~precise1) precise; urgency=low
+freecad (1:0.16.6710-1ppa3) precise; urgency=low
 
-  * Some upstream fixes.
+  * fixes 1999: Tessellation data or OpenInventor data memory leak 
 
- -- sgrogan <clhclh@earthlink.net>  Mon, 28 Nov 2016 10:29:43 -0400
+ -- sgrogan <clhclh@earthlink.net>  Sun, 30 April 2017 15:29:43 -0500
  
 freecad (1:0.16.6703-1ppa1~precise1) precise; urgency=low
 
