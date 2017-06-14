@@ -34,7 +34,6 @@ Build-Depends:
  libxerces-c-dev,
  libzipios++-dev,
  lsb-release,
- netgen-headers,
  opencascade-draw,
  pyside-tools,
  python3-dev,
