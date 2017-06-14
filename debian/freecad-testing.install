@@ -1,0 +1,6 @@
+debian/freecad-testing.desktop usr/share/applications
+debian/menu usr/share/menu/freecad-testing
+usr/share/freecad-testing
+usr/lib/freecad-testing/bin
+usr/lib/freecad-testing/Mod
+usr/lib/freecad-testing/lib

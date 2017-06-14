@@ -1,0 +1,3 @@
+usr/lib/freecad-testing/bin/FreeCAD usr/bin/freecad-testing
+usr/lib/freecad-testing/bin/FreeCADCmd usr/bin/freecadcmd-daily
+usr/share/man/man1/freecad-testing.1.gz usr/share/man/man1/freecadcmd-daily.1.gz
