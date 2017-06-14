@@ -1,6 +1,6 @@
-freecad-daily (0.17~alpha1-1xenial1) xenial; urgency=low
+freecad-testing (0.17~alpha1-1xenial1) xenial; urgency=low
 
-  * New package name for daily builds of FreeCAD development version
+  * New package name for testing builds of FreeCAD development version
     to allow dual installation.
 
- -- Normand Chamberland <gemnoc@gmail.com>  Sat, 30 Apr 2016 21:53:57 -0400
+ -- sgrogan <clhclh@earthlink.net>  WED, 14 June 2016 23:53:57 -0500

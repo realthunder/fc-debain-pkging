@@ -1,7 +1,7 @@
-Source: freecad-daily
+Source: freecad-testing
 Section: science
 Priority: extra
-Maintainer: Normand Chamberland <gemnoc@gmail.com>
+Maintainer: sgrogan <clhclh@earthlink.net>
 Uploaders: sgrogan <clhclh@earthlink.net>
 Vcs-Browser: https://code.launchpad.net/~freecad-maintainers/+git/gitmaster
 Vcs-Git: git://git.launchpad.net/~freecad-maintainers/+git/gitmaster
@@ -37,21 +37,21 @@ Build-Depends:
  netgen-headers,
  opencascade-draw,
  pyside-tools,
- python-dev,
- python-ply,
- swig,
+ python3-dev,
+ python3-ply,
+ swig3.0,
  libvtk6-dev
 Standards-Version: 3.9.5
 
-Package: freecad-daily
+Package: freecad-testing
 Architecture: any
 Depends:
  libfontconfig1-dev,
- python-matplotlib,
- python-pivy,
- python-pyside.qtcore,
- python-pyside.qtsvg,
- python-pyside.qtuitools,
+ python3-matplotlib,
+ python3-pivy,
+ python3-pyside.qtcore,
+ python3-pyside.qtsvg,
+ python-3pyside.qtuitools,
  ${shlibs:Depends},
  ${misc:Depends},
  ${python:Depends}
@@ -60,7 +60,7 @@ Recommends:
  graphviz
 Suggests:
  freecad-doc,
- python-collada,
+ python3-collada,
 Description: Extensible Open Source CAx program (beta)
  FreeCAD is a general purpose feature-based, parametric 3D modeler for CAD, MCAD,
  CAx, CAE and PLM, aimed directly at mechanical engineering and product design but
@@ -73,7 +73,7 @@ Description: Extensible Open Source CAx program (beta)
  The interface is built with Qt. FreeCAD runs exactly the same way on Windows, Mac OSX, BSD and
  Linux platforms.
 
-Package: freecad-daily-doc
+Package: freecad-testing-doc
 Architecture: all
 Section: doc
 Depends:
