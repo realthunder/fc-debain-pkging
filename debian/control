@@ -50,7 +50,7 @@ Depends:
  python3-pivy,
  python3-pyside.qtcore,
  python3-pyside.qtsvg,
- python-3pyside.qtuitools,
+ python3-pyside.qtuitools,
  ${shlibs:Depends},
  ${misc:Depends},
  ${python:Depends}
