@@ -24,7 +24,7 @@ extra_flags += \
 -DCMAKE_INSTALL_PREFIX="/usr/lib/freecad-testing" \
 -DCMAKE_INSTALL_DATADIR="/usr/share/freecad-testing" \
 -DCMAKE_INSTALL_DOCDIR="/usr/share/doc/freecad-testing-doc" \
--DCMAKE_CXX_COMPILER=/usr/bin/mpic++
+-DCMAKE_CXX_COMPILER=/usr/bin/mpic++ \
 
 override_dh_auto_configure:
 	cp -f src/Build/Version.h obj-$(DEB_BUILD_GNU_TYPE)/src/Build/Version.h
