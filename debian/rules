@@ -26,34 +26,33 @@ extra_flags += \
 -DCMAKE_INSTALL_DOCDIR="/usr/share/doc/freecad-testing-doc" \
 
 override_dh_auto_configure:
-	dh_auto_configure -- $(extra_flags) -DCMAKE_CXX_COMPILER=/usr/bin/mpic++
+	dh_auto_configure -- $(extra_flags) -DCMAKE_CXX_COMPILER="/usr/bin/mpic++"
 	cp -f src/Build/Version.h obj-$(DEB_BUILD_GNU_TYPE)/src/Build/Version.h
 	# fix for Ubuntu bug - 1556680
 	# https://bugs.launchpad.net/ubuntu/+source/oce/+bug/1556680
 	ifeq ($(UBUNTU_RELEASE),14.04)
-	ifeq ($(DEB_TARGET_ARCH),amd64)
-	dh_auto_configure -- $(extra_flags) \
-	-DPYTHON_BASENAME=".cpython-34m" \
-	-DPYTHON_EXECUTABLE="/usr/bin/python3.4" \
-	-DPYTHON_INCLUDE_DIR="/usr/include/python3.4m" \
-	-DPYTHON_LIBRARY="/usr/lib/x86_64-linux-gnu/libpython3.4m.so" \
-	-DPYTHON_SUFFIX=".cpython-34m" \
-	-DSWIG_DIR=/usr/share/"swig3.0" \
-	-DSWIG_EXECUTABLE=/usr/bin/"swig3.0" \
-	-DBoost_PYTHON_LIBRARY_RELEASE="/usr/lib/x86_64-linux-gnu/libboost_python-py34.so"
-	else ifeq ($(DEB_TARGET_ARCH),i386)
-	dh_auto_configure -- $(extra_flags) \ 
-	-DPYTHON_BASENAME=".cpython-34m" \
-        -DPYTHON_EXECUTABLE="/usr/bin/python3.4" \
-        -DPYTHON_INCLUDE_DIR="/usr/include/python3.4m" \
-        -DPYTHON_LIBRARY=/usr/lib/"i386-linux-gnu/libpython3.4m.so" \
-        -DPYTHON_SUFFIX=".cpython-34m" \
-        -DSWIG_DIR=/usr/share/"swig3.0" \
-        -DSWIG_EXECUTABLE=/usr/bin/"swig3.0" \
-        -DBoost_PYTHON_LIBRARY_RELEASE="/usr/lib/i386-linux-gnu/libboost_python-py34.so"
+		ifeq ($(DEB_TARGET_ARCH),amd64)
+			dh_auto_configure -- $(extra_flags) \
+			-DPYTHON_BASENAME=".cpython-34m" \
+			-DPYTHON_EXECUTABLE="/usr/bin/python3.4" \
+			-DPYTHON_INCLUDE_DIR="/usr/include/python3.4m" \
+			-DPYTHON_LIBRARY="/usr/lib/x86_64-linux-gnu/libpython3.4m.so" \
+			-DPYTHON_SUFFIX=".cpython-34m" \
+			-DSWIG_DIR=/usr/share/"swig3.0" \
+			-DSWIG_EXECUTABLE=/usr/bin/"swig3.0" \
+			-DBoost_PYTHON_LIBRARY_RELEASE="/usr/lib/x86_64-linux-gnu/libboost_python-py34.so"
+		else ifeq ($(DEB_TARGET_ARCH),i386)
+			dh_auto_configure -- $(extra_flags) \ 
+			-DPYTHON_BASENAME=".cpython-34m" \
+			-DPYTHON_EXECUTABLE="/usr/bin/python3.4" \
+			-DPYTHON_INCLUDE_DIR="/usr/include/python3.4m" \
+			-DPYTHON_LIBRARY=/usr/lib/"i386-linux-gnu/libpython3.4m.so" \
+			-DPYTHON_SUFFIX=".cpython-34m" \
+			-DSWIG_DIR=/usr/share/"swig3.0" \
+			-DSWIG_EXECUTABLE=/usr/bin/"swig3.0" \
+			-DBoost_PYTHON_LIBRARY_RELEASE="/usr/lib/i386-linux-gnu/libboost_python-py34.so"
+		endif
 	endif
-	endif
-
 
 override_dh_compress:
 	dh_compress -X.qch -X.qhc
