@@ -32,7 +32,6 @@ override_dh_auto_configure:
 	# https://bugs.launchpad.net/ubuntu/+source/oce/+bug/1556680
 	ifeq ($(UBUNTU_RELEASE),14.04)
 		ifeq ($(DEB_TARGET_ARCH),amd64)
-			dh_auto_configure -- $(extra_flags) \
 			-DPYTHON_BASENAME=".cpython-34m" \
 			-DPYTHON_EXECUTABLE="/usr/bin/python3.4" \
 			-DPYTHON_INCLUDE_DIR="/usr/include/python3.4m" \
@@ -42,7 +41,6 @@ override_dh_auto_configure:
 			-DSWIG_EXECUTABLE=/usr/bin/"swig3.0" \
 			-DBoost_PYTHON_LIBRARY_RELEASE="/usr/lib/x86_64-linux-gnu/libboost_python-py34.so"
 		else ifeq ($(DEB_TARGET_ARCH),i386)
-			dh_auto_configure -- $(extra_flags) \ 
 			-DPYTHON_BASENAME=".cpython-34m" \
 			-DPYTHON_EXECUTABLE="/usr/bin/python3.4" \
 			-DPYTHON_INCLUDE_DIR="/usr/include/python3.4m" \
