@@ -1,6 +1,6 @@
 ?package(freecad-testing):needs="X11"\
   section="Applications/Science/Engineering"\
-  title="FreeCAD Daily"\
+  title="FreeCAD Testing"\
   command="/usr/bin/freecad-testing"\
   icon="/usr/share/freecad-testing/freecad.xpm"
 

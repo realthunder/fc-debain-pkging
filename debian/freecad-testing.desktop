@@ -1,12 +1,12 @@
 [Desktop Entry]
 Version=1.1
-Name=FreeCAD Daily
+Name=FreeCAD Testing
 Comment=Feature based Parametric Modeler
 GenericName=CAD Application
-Exec=/usr/bin/freecad-daily --single-instance %U
+Exec=/usr/bin/freecad-testing --single-instance %U
 Terminal=false
 Type=Application
-Icon=freecad-daily
+Icon=freecad-testing
 Categories=Graphics;Science;Engineering
 StartupNotify=true
 MimeType=application/x-extension-fcstd
