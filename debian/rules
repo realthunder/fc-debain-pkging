@@ -25,14 +25,14 @@ extra_flags += \
 -DCMAKE_INSTALL_DATADIR="/usr/share/freecad-testing" \
 -DCMAKE_INSTALL_DOCDIR="/usr/share/doc/freecad-testing-doc" \
 -DCMAKE_CXX_COMPILER="/usr/bin/mpic++" \
--DPYTHON_BASENAME=".cpython-34m" \
--DPYTHON_EXECUTABLE="/usr/bin/python3.4" \
--DPYTHON_INCLUDE_DIR="/usr/include/python3.4m" \
--DPYTHON_LIBRARY="/usr/lib/x86_64-linux-gnu/libpython3.4m.so" \
--DPYTHON_SUFFIX=".cpython-34m" \
+-DPYTHON_BASENAME=".cpython-35m" \
+-DPYTHON_EXECUTABLE="/usr/bin/python3.5" \
+-DPYTHON_INCLUDE_DIR="/usr/include/python3.5m" \
+-DPYTHON_LIBRARY="/usr/lib/x86_64-linux-gnu/libpython3.5m.so" \
+-DPYTHON_SUFFIX=".cpython-35m" \
 -DSWIG_DIR="/usr/share/swig3.0" \
 -DSWIG_EXECUTABLE="/usr/bin/swig3.0" \
--DBoost_PYTHON_LIBRARY_RELEASE="/usr/lib/x86_64-linux-gnu/libboost_python-py34.so" \
+-DBoost_PYTHON_LIBRARY_RELEASE="/usr/lib/x86_64-linux-gnu/libboost_python-py35.so" \
 
 override_dh_auto_configure:
 	dh_auto_configure -- $(extra_flags) -DCMAKE_CXX_COMPILER=/usr/bin/mpic++
