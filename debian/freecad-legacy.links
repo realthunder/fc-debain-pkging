@@ -1,0 +1,3 @@
+usr/lib/freecad-legacy/bin/FreeCAD usr/bin/freecad-legacy
+usr/lib/freecad-legacy/bin/FreeCADCmd usr/bin/freecad-legacycmd
+usr/share/man/man1/freecad-legacy.1.gz usr/share/man/man1/freecad-legacycmd.1.gz

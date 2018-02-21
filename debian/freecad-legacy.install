@@ -1,0 +1,6 @@
+debian/freecad-legacy.desktop usr/share/applications
+debian/menu usr/share/menu/freecad-legacy
+usr/share/freecad-legacy
+usr/lib/freecad-legacy/bin
+usr/lib/freecad-legacy/Mod
+usr/lib/freecad-legacy/lib
