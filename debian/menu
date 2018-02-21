@@ -1,6 +1,6 @@
-?package(freecad):needs="X11"\
+?package(freecad-legacy):needs="X11"\
   section="Applications/Science/Engineering"\
   title="FreeCAD"\
-  command="/usr/bin/freecad"\
-  icon="/usr/share/freecad/freecad.xpm"
+  command="/usr/bin/freecad-legacy"\
+  icon="/usr/share/freecad-legacy/freecad-legacy.xpm"
 

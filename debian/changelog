@@ -1,28 +1,28 @@
-freecad (1:0.16.6712-1ppa3) xenial; urgency=low
+freecad-legacy (1:0.16.6712-1ppa3) xenial; urgency=low
 
   * fixes 1999: Tessellation data or OpenInventor data memory leak 
 
  -- sgrogan <clhclh@earthlink.net>  Sat, 22 July 2017 14:52:43 -0500
  
-freecad (1:0.16.6710-1ppa3) xenial; urgency=low
+freecad-legacy (1:0.16.6710-1ppa3) xenial; urgency=low
 
   * fixes 1999: Tessellation data or OpenInventor data memory leak 
 
  -- sgrogan <clhclh@earthlink.net>  Sun, 30 April 2017 15:29:43 -0500
  
-freecad (1:0.16.6707-1ppa2) xenial; urgency=low
+freecad-legacy (1:0.16.6707-1ppa2) xenial; urgency=low
 
   * Some upstream fixes radians.
 
  -- sgrogan <clhclh@earthlink.net>  Mon, 21 Nov 2016 10:29:43 -0500
  
-freecad (1:0.16.6704-1ppa1) xenial; urgency=low
+freecad-legacy (1:0.16.6704-1ppa1) xenial; urgency=low
 
   * Some upstream fixes.
 
  -- sgrogan <clhclh@earthlink.net>  Sat, 21 May 2016 10:29:43 -0500
 
-freecad (1:0.16.6703-1ppa1) xenial; urgency=low
+freecad-legacy (1:0.16.6703-1ppa1) xenial; urgency=low
 
   * Some upstream fixes.
   * debian/rules: add xenial filter to bug fix, makes file usable
@@ -31,7 +31,7 @@ freecad (1:0.16.6703-1ppa1) xenial; urgency=low
 
  -- Normand Chamberland <gemnoc@gmail.com>  Wed, 27 Apr 2016 20:36:26 -0400
 
-freecad (1:0.16.6700-1ppa1~xenial1) xenial; urgency=low
+freecad-legacy (1:0.16.6700-1ppa1~xenial1) xenial; urgency=low
 
   * New upstream version.
   * debian/control:
@@ -43,33 +43,33 @@ freecad (1:0.16.6700-1ppa1~xenial1) xenial; urgency=low
     - Add Recommends calculix-ccx, graphviz
   * debian/rules:
     - Add -DCMAKE_INSTALL_DOCDIR  (fixes
-      http://freecadweb.org/tracker/view.php?id=0002271)
+      http://freecad-legacyweb.org/tracker/view.php?id=0002271)
     - Add xenial-specific fix for bug
       https://bugs.launchpad.net/ubuntu/+source/oce/+bug/1556680
-  * add debian/freecad-doc.install
+  * add debian/freecad-legacy-doc.install
 
  -- Normand Chamberland <gemnoc@gmail.com>  Tue, 19 Apr 2016 21:22:27 -0400
 
-freecad (0.15.4671-1ppa5~trusty1) trusty; urgency=low
+freecad-legacy (0.15.4671-1ppa5~trusty1) trusty; urgency=low
 
   * Yet another attempt at upload
 
  -- Normand Chamberland <gemnoc@gmail.com>  Sun, 19 Apr 2015 21:50:16 -0400
 
-freecad (0.15.4671-1ppa4~trusty1) trusty; urgency=low
+freecad-legacy (0.15.4671-1ppa4~trusty1) trusty; urgency=low
 
   * Reupload to different PPA since the other one rejects it
 
  -- Normand Chamberland <gemnoc@gmail.com>  Sun, 19 Apr 2015 21:42:09 -0400
 
-freecad (0.15.4671-1ppa3~trusty1) trusty; urgency=low
+freecad-legacy (0.15.4671-1ppa3~trusty1) trusty; urgency=low
 
   * Reupload source tarball in its original state
   * patches: added repository_branch_fix.diff
 
  -- Normand Chamberland <gemnoc@gmail.com>  Sun, 19 Apr 2015 21:15:40 -0400
 
-freecad (0.15.4671-1ppa2~trusty1) trusty; urgency=low
+freecad-legacy (0.15.4671-1ppa2~trusty1) trusty; urgency=low
 
   * Refreshed source tarball to clean up branch name
   * patches: modified ccx-crash-fix.diff
@@ -77,7 +77,7 @@ freecad (0.15.4671-1ppa2~trusty1) trusty; urgency=low
 
  -- Normand Chamberland <gemnoc@gmail.com>  Sun, 12 Apr 2015 17:57:14 -0400
 
-freecad (0.15.4671-1ppa1~trusty1) trusty; urgency=low
+freecad-legacy (0.15.4671-1ppa1~trusty1) trusty; urgency=low
 
   * New upstream version packaged for Ubuntu 14.04 LTS.
   * source/format: changed to 3.0 (quilt)
@@ -87,25 +87,25 @@ freecad (0.15.4671-1ppa1~trusty1) trusty; urgency=low
     - Added ccx package to Suggests.
   * rules: added DBUILD_FEM_NETGEN=ON
   * Other changes to debian files from
-    http://bazaar.launchpad.net/~freecad-maintainers/freecad/packaging.trusty/revision/4
+    http://bazaar.launchpad.net/~freecad-legacy-maintainers/freecad-legacy/packaging.trusty/revision/4
   * patches: added ccx-crash-fix.diff
 
  -- Normand Chamberland <gemnoc@gmail.com>  Thu, 09 Apr 2015 22:22:44 -0400
 
-freecad (0.14.3702-1ppa1~trusty1) trusty; urgency=low
+freecad-legacy (0.14.3702-1ppa1~trusty1) trusty; urgency=low
 
   * bug fixes from upstream
 
  -- Normand Chamberland <gemnoc@gmail.com>  Mon, 14 Jul 2014 20:28:24 -0400
 
-freecad (0.14.3692-1ppa1~trusty1) trusty; urgency=low
+freecad-legacy (0.14.3692-1ppa1~trusty1) trusty; urgency=low
 
   * New upstream version.
   * control: updated dependencies and package description
 
  -- Normand Chamberland <gemnoc@gmail.com>  Mon, 07 Jul 2014 22:45:22 -0400
 
-freecad (0.13.1830-1ppa1~precise2) precise; urgency=low
+freecad-legacy (0.13.1830-1ppa1~precise2) precise; urgency=low
 
   * Fix hard dependency on libgl1-mesa-glx preventing installation on
     Ubuntu 12.04.2 with LTSEnablementStack. Removal of shlibs.local file
@@ -113,7 +113,7 @@ freecad (0.13.1830-1ppa1~precise2) precise; urgency=low
 
  -- Normand Chamberland <gemnoc@gmail.com>  Sun, 05 May 2013 18:23:27 -0400
 
-freecad (0.13.1830-1ppa1~precise1) precise; urgency=low
+freecad-legacy (0.13.1830-1ppa1~precise1) precise; urgency=low
 
   * New upstream version.
   * control:
