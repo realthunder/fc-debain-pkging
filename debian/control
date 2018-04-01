@@ -1,11 +1,11 @@
-Source: freecad-legacy
+Source: freecad-0.16
 Section: science
 Priority: extra
 Maintainer: Normand Chamberland <gemnoc@gmail.com>
 Uploaders: sgrogan <clhclh@earthlink.net>
-Vcs-Browser: https://code.launchpad.net/~freecad-legacy-maintainers/+git/gitmaster
-Vcs-Git: git://git.launchpad.net/~freecad-legacy-maintainers/+git/gitmaster
-Homepage: http://www.freecad-legacyweb.org/
+Vcs-Browser: https://code.launchpad.net/~freecad-0.16-maintainers/+git/gitmaster
+Vcs-Git: git://git.launchpad.net/~freecad-0.16-maintainers/+git/gitmaster
+Homepage: http://www.freecad-0.16web.org/
 Build-Depends:
  cmake,
  debhelper (>= 9),
@@ -39,7 +39,7 @@ Build-Depends:
  swig
 Standards-Version: 3.9.5
 
-Package: freecad-legacy
+Package: freecad-0.16
 Architecture: any
 Depends:
  python-pivy,
@@ -53,7 +53,7 @@ Recommends:
  calculix-ccx,
  graphviz
 Suggests:
- freecad-legacy-doc,
+ freecad-0.16-doc,
  python-collada,
  python-matplotlib
 Description: Extensible Open Source CAx program (beta)
@@ -68,7 +68,7 @@ Description: Extensible Open Source CAx program (beta)
  The interface is built with Qt. FreeCAD runs exactly the same way on Windows, Mac OSX, BSD and
  Linux platforms.
 
-Package: freecad-legacy-doc
+Package: freecad-0.16-doc
 Architecture: all
 Section: doc
 Depends:
@@ -80,7 +80,7 @@ Description: FreeCAD documentation
  also fits a wider range of uses in engineering, such as architecture or other engineering
  specialties. It is 100% Open Source (LGPL2+ license) and extremely modular, allowing
  for very advanced extension and customization.
- For more details see http://www.freecad-legacyweb.org/
+ For more details see http://www.freecad-0.16web.org/
  .
  This package contains the FreeCAD documentation.
  .

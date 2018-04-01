@@ -19,9 +19,9 @@ extra_flags += \
 -DCMAKE_SHARED_LINKER_FLAGS="$(shell dpkg-buildflags --get LDFLAGS)" \
 -DLIB_SUFFIX="" \
 -DOCC_INCLUDE_DIR="/usr/include/oce" \
--DCMAKE_INSTALL_PREFIX="/usr/lib/freecad-legacy" \
--DCMAKE_INSTALL_DATADIR="/usr/share/freecad-legacy" \
--DCMAKE_INSTALL_DOCDIR="/usr/share/doc/freecad-legacy-doc" \
+-DCMAKE_INSTALL_PREFIX="/usr/lib/freecad-0.16" \
+-DCMAKE_INSTALL_DATADIR="/usr/share/freecad-0.16" \
+-DCMAKE_INSTALL_DOCDIR="/usr/share/doc/freecad-0.16-doc" \
 
 override_dh_auto_configure:
 	dh_auto_configure -- $(extra_flags)
@@ -35,15 +35,15 @@ override_dh_installchangelogs:
 	
 override_dh_installmime:
 	dh_installmime
-	dh_install debian/mime/freecad-legacy-thumbnailer usr/bin
-	dh_install debian/mime/freecad-legacy.thumbnailer usr/share/thumbnailers
-	dh_install debian/mime/freecad-legacy.schemas etc/gconf/schemas
+	dh_install debian/mime/freecad-0.16-thumbnailer usr/bin
+	dh_install debian/mime/freecad-0.16.thumbnailer usr/share/thumbnailers
+	dh_install debian/mime/freecad-0.16.schemas etc/gconf/schemas
 
 override_dh_icons:
-	install -m 644 debian/freecad-legacy/usr/share/freecad-legacy/freecad-legacy-icon-16.png debian/freecad-legacy/usr/share/icons/hicolor/16x16/apps/freecad-legacy.png
-	install -m 644 debian/freecad-legacy/usr/share/freecad-legacy/freecad-legacy-icon-32.png debian/freecad-legacy/usr/share/icons/hicolor/32x32/apps/freecad-legacy.png
-	install -m 644 debian/freecad-legacy/usr/share/freecad-legacy/freecad-legacy-icon-32.png debian/freecad-legacy/usr/share/icons/hicolor/48x48/apps/freecad-legacy.png
-	install -m 644 debian/freecad-legacy/usr/share/freecad-legacy/freecad-legacy-icon-64.png debian/freecad-legacy/usr/share/icons/hicolor/64x64/apps/freecad-legacy.png
-	install -m 644 debian/freecad-legacy/usr/share/freecad-legacy/freecad-legacy.svg debian/freecad-legacy/usr/share/icons/hicolor/scalable/apps/freecad-legacy.svg
-	install -m 644 debian/freecad-legacy/usr/share/freecad-legacy/freecad-legacy-doc.png debian/freecad-legacy/usr/share/icons/hicolor/64x64/mimetypes/application-x-extension-fcstd.png
+	install -m 644 debian/freecad-0.16/usr/share/freecad-0.16/freecad-0.16-icon-16.png debian/freecad-0.16/usr/share/icons/hicolor/16x16/apps/freecad-0.16.png
+	install -m 644 debian/freecad-0.16/usr/share/freecad-0.16/freecad-0.16-icon-32.png debian/freecad-0.16/usr/share/icons/hicolor/32x32/apps/freecad-0.16.png
+	install -m 644 debian/freecad-0.16/usr/share/freecad-0.16/freecad-0.16-icon-32.png debian/freecad-0.16/usr/share/icons/hicolor/48x48/apps/freecad-0.16.png
+	install -m 644 debian/freecad-0.16/usr/share/freecad-0.16/freecad-0.16-icon-64.png debian/freecad-0.16/usr/share/icons/hicolor/64x64/apps/freecad-0.16.png
+	install -m 644 debian/freecad-0.16/usr/share/freecad-0.16/freecad-0.16.svg debian/freecad-0.16/usr/share/icons/hicolor/scalable/apps/freecad-0.16.svg
+	install -m 644 debian/freecad-0.16/usr/share/freecad-0.16/freecad-0.16-doc.png debian/freecad-0.16/usr/share/icons/hicolor/64x64/mimetypes/application-x-extension-fcstd.png
 
