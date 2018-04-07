@@ -40,10 +40,10 @@ override_dh_installmime:
 	dh_install debian/mime/freecad-0.16.schemas etc/gconf/schemas
 
 override_dh_icons:
-	install -m 644 debian/freecad-0.16/usr/share/freecad-0.16/freecad-0.16-icon-16.png debian/freecad-0.16/usr/share/icons/hicolor/16x16/apps/freecad-0.16.png
-	install -m 644 debian/freecad-0.16/usr/share/freecad-0.16/freecad-0.16-icon-32.png debian/freecad-0.16/usr/share/icons/hicolor/32x32/apps/freecad-0.16.png
-	install -m 644 debian/freecad-0.16/usr/share/freecad-0.16/freecad-0.16-icon-32.png debian/freecad-0.16/usr/share/icons/hicolor/48x48/apps/freecad-0.16.png
-	install -m 644 debian/freecad-0.16/usr/share/freecad-0.16/freecad-0.16-icon-64.png debian/freecad-0.16/usr/share/icons/hicolor/64x64/apps/freecad-0.16.png
-	install -m 644 debian/freecad-0.16/usr/share/freecad-0.16/freecad-0.16.svg debian/freecad-0.16/usr/share/icons/hicolor/scalable/apps/freecad-0.16.svg
-	install -m 644 debian/freecad-0.16/usr/share/freecad-0.16/freecad-0.16-doc.png debian/freecad-0.16/usr/share/icons/hicolor/64x64/mimetypes/application-x-extension-fcstd.png
+	install -m 644 debian/freecad-0.16/usr/share/freecad-0.16/freecad-icon-16.png debian/freecad-0.16/usr/share/icons/hicolor/16x16/apps/freecad-0.16.png
+	install -m 644 debian/freecad-0.16/usr/share/freecad-0.16/freecad-icon-32.png debian/freecad-0.16/usr/share/icons/hicolor/32x32/apps/freecad-0.16.png
+	install -m 644 debian/freecad-0.16/usr/share/freecad-0.16/freecad-icon-32.png debian/freecad-0.16/usr/share/icons/hicolor/48x48/apps/freecad-0.16.png
+	install -m 644 debian/freecad-0.16/usr/share/freecad-0.16/freecad-icon-64.png debian/freecad-0.16/usr/share/icons/hicolor/64x64/apps/freecad-0.16.png
+	install -m 644 debian/freecad-0.16/usr/share/freecad-0.16/freecad.svg debian/freecad-0.16/usr/share/icons/hicolor/scalable/apps/freecad-0.16.svg
+	install -m 644 debian/freecad-0.16/usr/share/freecad-0.16/freecad-doc.png debian/freecad-0.16/usr/share/icons/hicolor/64x64/mimetypes/application-x-extension-fcstd.png
 

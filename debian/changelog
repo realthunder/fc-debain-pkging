@@ -1,4 +1,4 @@
-freecad-0.16 (1:0.16.6712-0ppa4) xenial; urgency=low
+freecad-0.16 (1:0.16.6712-0ppa5) xenial; urgency=low
 
   * fixes 1999: Tessellation data or OpenInventor data memory leak 
 
