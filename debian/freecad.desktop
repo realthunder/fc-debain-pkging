@@ -1,18 +1,16 @@
 [Desktop Entry]
 Version=1.0
 Name=FreeCAD
-Name[de]=FreeCAD
 Comment=Feature based Parametric Modeler
-Comment[de]=Feature-basierter parametrischer Modellierer
+Comment[de_DE]=Feature-basierter parametrischer Modellierer
+Comment[fr]=Modeleur paramétrique à base de fonctions
 GenericName=CAD Application
-GenericName[de]=CAD-Anwendung
-Exec=/usr/bin/freecad %F
-Path=/usr/lib/freecad
+GenericName[de_DE]=CAD-Anwendung
+GenericName[fr]=Application de CAO
+Exec=freecad --single-instance %U
 Terminal=false
 Type=Application
 Icon=freecad
 Categories=Graphics;Science;Engineering
 StartupNotify=true
-GenericName[de_DE]=Feature-basierter parametrischer Modellierer
-Comment[de_DE]=Feature-basierter parametrischer Modellierer
 MimeType=application/x-extension-fcstd

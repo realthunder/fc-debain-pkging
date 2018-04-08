@@ -16,12 +16,15 @@ Build-Depends:
  libboost-regex-dev (>= 1.55) | libboost-regex1.55-dev,
  libboost-signals-dev (>= 1.55) | libboost-signals1.55-dev,
  libboost-thread-dev (>= 1.55) | libboost-thread1.55-dev,
- libcoin60-dev | libcoin80-dev,
+ libcoin80-dev,
  libeigen3-dev,
  libfreeimage-dev,
  libfreetype6-dev,
- liboce-ocaf-dev,
- liboce-visualization-dev,
+ libmedc-dev,
+ libocct-data-exchange-dev,
+ libocct-ocaf-dev,
+ libocct-visualization-dev,
+ libproj-dev,
  libpyside-dev,
  libqt4-dev,
  libqt4-opengl-dev,
@@ -32,11 +35,12 @@ Build-Depends:
  libzipios++-dev,
  lsb-release,
  netgen-headers,
- oce-draw,
+ occt-draw,
  pyside-tools,
  python-dev,
  python-ply,
- swig
+ swig,
+ libvtk6-dev
 Standards-Version: 3.9.5
 
 Package: freecad
@@ -54,8 +58,7 @@ Recommends:
  graphviz
 Suggests:
  freecad-doc,
- python-collada,
- python-matplotlib
+ python-collada
 Description: Extensible Open Source CAx program (beta)
  FreeCAD is a general purpose feature-based, parametric 3D modeler for CAD, MCAD,
  CAx, CAE and PLM, aimed directly at mechanical engineering and product design but
