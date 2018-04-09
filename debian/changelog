@@ -1,3 +1,9 @@
+freecad (1:0.17.13509-1ppa3) xenial; urgency=medium
+
+  * d/control: remove netgen-headers from Build-Depends
+
+ -- Normand Chamberland <normand@desktop-1604>  Mon, 09 Apr 2018 08:24:02 -0400
+
 freecad (1:0.17.13509-1ppa2) xenial; urgency=medium
 
   * d/control: add back libfontconfig1-dev & python-matplotlib depends
